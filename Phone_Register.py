@@ -28,38 +28,47 @@ def openUrl(handle, url):
     handle.get(url)
     handle.maximize_window()
 
-#查找登录相关的元素
-def findElement(d, arg):
+#查找注册定位元素
+def findRegisterElement(d,arg):
     '''
-    arg must be dict
-    1: text_id:
-    2：userid
-    3: pwdid
-    4: loginid
-    return useEle, pwdEle, loginEle
+    字典中需要的元素：
+    1:btnreg
+    2:userid
+    3:phoneid
+    4:verifyid
+    5:InVerifyid
+    6:pwdid
+    7:setpwdid
+    8:registerid
     '''
-    #有些网站没有对应的文本定位
-    if 'text_id' in arg:
-        ele_login = get_ele_times(d, 10, lambda d: d.find_element_by_link_text(arg['text_id']))
-        ele_login.click()
-    useEle = d.find_element_by_id(arg['userid'])
-    pwdEle = d.find_element_by_id(arg['pwdid'])
-    loginEle = d.find_element_by_id(arg['loginid'])
-    return useEle, pwdEle, loginEle
+  # if 'text_id' in arg:
+    #     ele_login = get_ele_times(d, 10, lambda d: d.find_element_by_link_text(arg['text_id']))
+    #     ele_login.click()
+    btnReg = d.find_element_by_id(arg['btnreg'])#查找注册按钮
+    userID = d.find_element_by_id(arg['userid'])#查找用户昵称元素
+    phoneEle = d.find_element_by_id(arg['phoneid'])#查找注册手机号文本框
+    verifyEle = d.find_element_by_id(arg['verifyid'])#查找验证码按钮元素
+    inVerifyEle = d.find_element_by_id(arg['InVerifyid'])#查找输入验证码文本框
+    pwdEle = d.find_element_by_id(arg['pwdid'])#查找注册密码文本框
+    setpwdEle = d.find_element_by_id(arg['setpwdid'])#查找确认密码文本框
+    loginEle = d.find_element_by_id(arg['registerid'])#查找点击注册的按钮
+    return btnReg,userID,phoneEle,verifyEle,inVerifyEle,pwdEle,setpwdEle,loginEle
+
 #输入的值
 def sendVals(eletuple, arg):
     '''
     ele tuple
     account : uname, pwd
     '''
-    listkey = ['uname', 'pwd']
+    listkey = ['phone', 'verify','pwd','setpwd']
     i = 0
     for key in listkey:
         eletuple[i].send_keys('')
         eletuple[i].clear()
         eletuple[i].send_keys(arg[key])
         i += 1
-    eletuple[2].click()
+    eletuple[1].click()
+    eletuple[4].click()
 
 #测试报告
 def checkResult(d, err_id, arg, log):
@@ -67,41 +76,41 @@ def checkResult(d, err_id, arg, log):
     time.sleep(2)
     try:
         err = d.find_element_by_id(err_id)
-        print("Account And Pwd Error!")
+        print("注册失败!")
         # msg = 'uname=%s pwd=%s:error:%s\n'%(arg['uname'],arg['pwd'], err.text)
-        log.log_write(arg['uname'], arg['pwd'], 'Error', err.text)
+        log.log_write(arg['phone'], arg['verify'], arg['pwd'],arg['setpwd'], 'Error', err.text)
+
     except:
-        print("Account And Pwd Right!")
+        print("注册成功!")
         msg = 'uname=%s pwd=%s:pass\n' % (arg['uname'], arg['pwd'])
         # log.log_write(msg)
-        log.log_write(arg['uname'], arg['pwd'], 'Pass')
+        log.log_write(arg['phone'], arg['verify'], arg['pwd'], arg['setpwd'], 'Pass')
         result = True
     return result
 
 #退出登录
 def logout(d, ele_dict):
-    d.find_element_by_class_name(ele_dict['usermenu']).click()
+    # d.find_element_by_class_name(ele_dict['usermenu']).click()
     d.find_element_by_link_text(ele_dict['logout']).click()
 
-#登录测试
-def login_test(ele_dict, user_list):
+#注册测试
+def register_test(ele_dict, user_list):
     d = openBrower()
     # log = Loginfo()
     log = Xlloginfo()
-    log.log_init('sheet1', 'uname', 'pwd', 'result', 'msg')
+    log.log_init('sheet1', 'phone', 'verify', 'pwd','setpwd' ,'msg')
     openUrl(d, ele_dict['url'])
-    ele_tuple = findElement(d, ele_dict)
+    ele_tuple = findRegisterElement(d, ele_dict)
     for arg in user_list:
         sendVals(ele_tuple, arg)
         result = checkResult(d, ele_dict['errorid'], arg, log)
         if result:
             # logout
             logout(d, ele_dict)
-            # longin
-            ele_tuple = findElement(d, ele_dict)
+            # register
+            ele_tuple = findRegisterElement(d, ele_dict)
     log.log_close()
     d.quit()
-
 
 
 if __name__ == '__main__':
@@ -117,4 +126,4 @@ if __name__ == '__main__':
     user_list = xinfo.get_sheetinfo_by_index(0)
 
     # file webinfo/usrinfo ele_dict= get_webinfo(path) user_list=get_userinfo(path)
-    login_test(ele_dict, user_list)
+    register_test(ele_dict, user_list)

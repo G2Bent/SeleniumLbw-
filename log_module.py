@@ -2,9 +2,13 @@
 import time
 import xlsxwriter
 
+class Regiter(object):
+    def __init__(self,path='',mode = 'w'):
+        rname = path
+
 
 class Loginfo(object):
-    def __init__(self, path='', mode='w'):
+    def __init__(self, path='../publish', mode='w'):
         fname = path + time.strftime('%Y-%m-%d', time.gmtime())
         self.log = open(path + fname + '.txt', mode)
 
@@ -20,7 +24,7 @@ class Loginfo(object):
 
 class Xlloginfo(object):
     def __init__(self, path=''):
-        fname = path + time.strftime('%Y-%m-%d', time.gmtime())
+        fname = path + time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime())
         self.row = 0
         self.xl = xlsxwriter.Workbook(path + fname + '.xls')
         self.style = self.xl.add_format({'bg_color': 'red'})

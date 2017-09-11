@@ -6,14 +6,16 @@ import xlrd
 def get_webinfo(path):
     web_info = {}
     # config = open(path)
+    #这是使用codecs模块打开文件，这可以解决文件格式问题
     config = codecs.open(path, 'r', 'utf-8')
 
     for line in config:
+        #列表解析
         result = [ele.strip() for ele in line.split('=')]
         web_info.update(dict([result]))
     return web_info
 
-
+'''
 def get_userinfo(path):
     user_info = []
     # config = open(path)
@@ -27,7 +29,7 @@ def get_userinfo(path):
             user_dict.update(dict([account]))
         user_info.append(user_dict)
     return user_info
-
+'''
 
 class XlUserinfo(object):
     def __init__(self, path=''):
@@ -64,6 +66,8 @@ if __name__ == '__main__':
     # print (userinfo)
     xinfo = XlUserinfo(r'E:\Python汇总\自动化测试-selenium\source\userinfo.xls')
     info = xinfo.get_sheetinfo_by_index(0)
-    print(info)
+    # print(info)
     info = xinfo.get_sheetinfo_by_name('Sheet1')
+    info2 = xinfo.get_sheetinfo_by_name('Sheet2')
     print(info)
+    print(info2)
