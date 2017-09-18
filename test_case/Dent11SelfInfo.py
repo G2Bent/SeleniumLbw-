@@ -17,15 +17,18 @@ class DentTest(unittest.TestCase):
         self.accept_next_alert = True
 
     def test_Login1(self):
-        '''测试登录和注册页面的链接是否正确'''
-        phone = "1880000000"
+        '''修改用户昵称'''
+        phone = "18800000000"
         driver = self.driver
         driver.get(self.base_url)
         driver.maximize_window()
-        driver.find_element_by_xpath("//*[@id=\"app\"]/div/div[2]/div[3]/a").click()
-        time.sleep(5)
-        # driver.find_element_by_partial_link_text("没有账号").click()
-        driver.find_element_by_partial_link_text("已有账号").click()
+        driver.find_element_by_id("txt_user").send_keys(phone)
+        driver.find_element_by_id("pwd_login").send_keys("a123456")
+        driver.find_element_by_id("btn_login").click()
+        #点击编辑按钮
+        driver.find_element_by_xpath('//*[@id="btn_edit"]').click()
+        driver.find_element_by_xpath('//*[@id="text-uname"]').send_keys("广州恒大")
+        driver.find_element_by_xpath('//*[@id="btn_save"]').click()
         time.sleep(5)
 
     def is_element_present(self, how, what):
