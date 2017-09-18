@@ -17,7 +17,7 @@ class DentTest(unittest.TestCase):
         self.accept_next_alert = True
 
     def test_Login1(self):
-        '''测试昵称长度'''
+        '''修改用户性别'''
         phone = "18800000000"
         driver = self.driver
         driver.get(self.base_url)
@@ -25,14 +25,10 @@ class DentTest(unittest.TestCase):
         driver.find_element_by_id("txt_user").send_keys(phone)
         driver.find_element_by_id("pwd_login").send_keys("a123456")
         driver.find_element_by_id("btn_login").click()
-        # 点击编辑按钮
+        #点击编辑按钮
         driver.find_element_by_xpath('//*[@id="btn_edit"]').click()
-        driver.find_element_by_xpath('//*[@id="text-uname"]').send_keys("广州恒大的点点滴滴多多多多多多多多多多多多多"
-                                                                        "多多多多多多多多多多多多多多多多的点点滴滴多多"
-                                                                        "多多多多多多多多多多多多多多的二二二二二二二二"
-                                                                        "二二二二二无无无无无无无无")
+        driver.find_element_by_xpath('//*[@id="radio_male"]').click()#修改性别为男性
         driver.find_element_by_xpath('//*[@id="btn_save"]').click()
-
         time.sleep(5)
 
     def is_element_present(self, how, what):
