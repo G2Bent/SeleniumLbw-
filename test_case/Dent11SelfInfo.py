@@ -25,6 +25,7 @@ class DentTest(unittest.TestCase):
         driver.find_element_by_id("txt_user").send_keys(phone)
         driver.find_element_by_id("pwd_login").send_keys("a123456")
         driver.find_element_by_id("btn_login").click()
+        time.sleep(5)
         #点击编辑按钮
         driver.find_element_by_xpath('//*[@id="btn_edit"]').click()
         driver.find_element_by_xpath('//*[@id="text-uname"]').send_keys("广州恒大")

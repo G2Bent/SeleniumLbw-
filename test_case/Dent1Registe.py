@@ -18,13 +18,13 @@ class RegisterTest(unittest.TestCase):
 
     def test_Register1(self):
         '''测试用户注册成功'''
-        phone = "18800000061"
+        phone = "18800000052"
         driver = self.driver
         driver.get(self.base_url)
         driver.maximize_window()
         driver.find_element_by_id("txt_user").send_keys(phone)
         driver.find_element_by_id("btn_verify").click()
-        driver.find_element_by_id("txt_verify_code").send_keys(Data.verify_code(18800000061))
+        driver.find_element_by_id("txt_verify_code").send_keys(Data.verify_code(18800000052))
         driver.find_element_by_id("pwd_set").send_keys("lzb123456")
         driver.find_element_by_id("pwd_repeat").send_keys("lzb123456")
         driver.find_element_by_id("btn_reg").click()

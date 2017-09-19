@@ -25,14 +25,15 @@ class DentTest(unittest.TestCase):
         driver.find_element_by_id("txt_user").send_keys(phone)
         driver.find_element_by_id("pwd_login").send_keys("a123456")
         driver.find_element_by_id("btn_login").click()
+        time.sleep(5)
         #点击编辑按钮
         driver.find_element_by_xpath('//*[@id="btn_edit"]').click()
-        driver.find_element_by_xpath('//*[@id="app"]/div[3]/div[3]/div[3]/select[1]').click()#点击年
-        driver.find_element_by_xpath('//*[@id="app"]/div[3]/div[3]/div[3]/select[1]/option[2]').click()#选择年
-        driver.find_element_by_xpath('//*[@id="app"]/div[3]/div[3]/div[3]/select[2]').click()#点击月
-        driver.find_element_by_xpath('//*[@id="app"]/div[3]/div[3]/div[3]/select[2]/option[6]')#选择月
-        driver.find_element_by_xpath('//*[@id="app"]/div[3]/div[3]/div[3]/select[3]')#点击日
-        driver.find_element_by_xpath('//*[@id="app"]/div[3]/div[3]/div[3]/select[3]/option[4]')#选择日
+        driver.find_element_by_xpath('//*[@id="app"]/div[4]/div[3]/div[3]/select[1]').click()#点击年
+        driver.find_element_by_xpath('//*[@id="app"]/div[4]/div[3]/div[3]/select[1]/option[6]').click()#选择年
+        driver.find_element_by_xpath('//*[@id="app"]/div[4]/div[3]/div[3]/select[2]').click()#点击月
+        driver.find_element_by_xpath('//*[@id="app"]/div[4]/div[3]/div[3]/select[2]/option[4]').click()#选择月
+        driver.find_element_by_xpath('//*[@id="app"]/div[4]/div[3]/div[3]/select[3]').click()#点击日
+        driver.find_element_by_xpath('//*[@id="app"]/div[4]/div[3]/div[3]/select[3]/option[9]').click()#选择日
         driver.find_element_by_xpath('//*[@id="btn_save"]').click()
         time.sleep(5)
 
