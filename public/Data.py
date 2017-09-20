@@ -26,7 +26,7 @@ def email_code(email):
     print(code_dict)
     if code_dict != None:
         if code_dict['success'] == True:
-            print(code_dict['data']['verifycode'])
+            # print(code_dict['data']['verifycode'])
             return code_dict['data']['verifycode']
         else:
             return ('接口异常')

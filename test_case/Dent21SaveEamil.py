@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
-import unittest, time, re ,HTMLTestRunner,os
+import unittest, time, re ,HTMLTestRunner
 from public import Data
 
 class DentTest(unittest.TestCase):
@@ -17,7 +17,7 @@ class DentTest(unittest.TestCase):
         self.accept_next_alert = True
 
     def test_Login1(self):
-        '''修改用户不能超过2M'''
+        '''修改用户密码'''
         phone = "18800000000"
         driver = self.driver
         driver.get(self.base_url)
@@ -26,17 +26,11 @@ class DentTest(unittest.TestCase):
         driver.find_element_by_id("pwd_login").send_keys("a123456")
         driver.find_element_by_id("btn_login").click()
         time.sleep(5)
-        #点击编辑按钮
-        driver.find_element_by_xpath('//*[@id="btn_edit"]').click()
-        driver.find_element_by_xpath('//*[@id="selectfiles1"]').click()
-        os.system(os.path.dirname(os.getcwd())+'\Autolt\超出2M头像.exe')
-        time.sleep(2)
-        # s = driver.switch_to_alert()
-        # s.accept()
-        # time.sleep(3)
-        # driver.find_element(By.XPATH("//*[@id='alert']/input")).click()
-        driver.find_element_by_xpath('//*[@id="btn_save"]').click()
-        time.sleep(3)
+        #点击绑定邮箱按钮
+        driver.find_element_by_xpath('//*[@id="btn_edit_email"]').click()
+        driver.find_element_by_xpath('//*[@id="txt_email"]').send_keys("@@#￥%")
+        driver.find_element_by_xpath('//*[@id="btn_verify"]').click()
+        time.sleep(5)
 
     def is_element_present(self, how, what):
         try:
