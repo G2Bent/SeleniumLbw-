@@ -5,38 +5,31 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
-import unittest, time, re ,HTMLTestRunner,os
+import unittest, time, re ,HTMLTestRunner
 from public import Data
 
-class DentTest(unittest.TestCase):
+class RegisterTest(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(30)
-        self.base_url = "http://test.dent-lab.com/login.html"
+        self.base_url = "http://test.dent-lab.com/register.html"
         self.verificationErrors = []
         self.accept_next_alert = True
 
-    def test_Login1(self):
-        '''修改用户不能超过2M'''
-        phone = "18800000000"
+    def test_Register1(self):
+        '''测试密码格式错误，提示信息'''
         driver = self.driver
         driver.get(self.base_url)
         driver.maximize_window()
-        driver.find_element_by_id("txt_user").send_keys(phone)
-        driver.find_element_by_id("pwd_login").send_keys("a123456")
-        driver.find_element_by_id("btn_login").click()
+        driver.find_element_by_id("txt_user").send_keys("89898233@qq.com")
+        driver.find_element_by_id("btn_verify").click()
+        driver.find_element_by_id("txt_verify_code").send_keys(Data.verify_code("89898233@qq.com"))
+        driver.find_element_by_id("pwd_set").send_keys("a1456")
+        driver.find_element_by_id("pwd_repeat").send_keys("a1456")
+        driver.find_element_by_id("btn_reg").click()
+        # error = driver.find_element_by_id("error_tips").text
+        # self.assertEqual("请输入由6-16字母(区分大小)、数字、特殊字符组成的密码", error)
         time.sleep(5)
-        #点击编辑按钮
-        driver.find_element_by_xpath('//*[@id="btn_edit"]').click()
-        driver.find_element_by_xpath('//*[@id="selectfiles1"]').click()
-        os.system(os.path.dirname(os.getcwd())+'\Autolt\超出2M头像.exe')
-        time.sleep(2)
-        s = driver.switch_to_alert()
-        s.accept()
-        time.sleep(2)
-        # driver.find_element(By.XPATH("//*[@id='alert']/input")).click()
-        driver.find_element_by_xpath('//*[@id="btn_save"]').click()
-        time.sleep(3)
 
     def is_element_present(self, how, what):
         try:

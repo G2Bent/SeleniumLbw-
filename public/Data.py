@@ -29,6 +29,6 @@ def email_code(email):
             # print(code_dict['data']['verifycode'])
             return code_dict['data']['verifycode']
         else:
-            return ('接口异常')
+            raise ApiStateException
     else:
-        return ('code_dict值为None')
+        raise ApiOpenException

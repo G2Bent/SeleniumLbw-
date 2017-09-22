@@ -36,6 +36,8 @@ class DentTest(unittest.TestCase):
         # time.sleep(3)
         # driver.find_element(By.XPATH("//*[@id='alert']/input")).click()
         driver.find_element_by_xpath('//*[@id="btn_save"]').click()
+        s = driver.switch_to_alert()
+        s.accept()
         time.sleep(3)
 
     def is_element_present(self, how, what):

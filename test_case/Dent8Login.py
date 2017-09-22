@@ -18,7 +18,6 @@ class DentTest(unittest.TestCase):
 
     def test_Login1(self):
         '''测试用户名或密码不能为空'''
-        phone = "1880000000"
         driver = self.driver
         driver.get(self.base_url)
         driver.maximize_window()

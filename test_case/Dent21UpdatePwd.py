@@ -18,18 +18,22 @@ class DentTest(unittest.TestCase):
 
     def test_Login1(self):
         '''修改用户密码'''
+        now = time.strftime("%Y-%m-%d %H_%M_%S")
         phone = "18800000000"
         driver = self.driver
         driver.get(self.base_url)
         driver.maximize_window()
         driver.find_element_by_id("txt_user").send_keys(phone)
-        driver.find_element_by_id("pwd_login").send_keys("a123456")
+        driver.find_element_by_id("pwd_login").send_keys("a12345566")
         driver.find_element_by_id("btn_login").click()
         time.sleep(5)
-        #点击绑定邮箱按钮
-        driver.find_element_by_xpath('//*[@id="btn_edit_email"]').click()
-        driver.find_element_by_xpath('//*[@id="txt_email"]').send_keys("@@#￥%")
-        driver.find_element_by_xpath('//*[@id="btn_verify"]').click()
+        #点击修改密码按钮
+        driver.find_element_by_xpath('//*[@id="btn_edit_pwd"]').click()
+        driver.find_element_by_xpath('//*[@id="txt_old_pwd"]').send_keys("a12345566")
+        driver.find_element_by_xpath('//*[@id="txt_new_pwd"]').send_keys("a123456")
+        driver.find_element_by_xpath('//*[@id="txt_repeat_pwd"]').send_keys("a123456")
+        driver.find_element_by_xpath('//*[@id="btn_save_pwd"]').click()
+        driver.get_screenshot_as_file("TestScreenshot\%s.png" % now)
         time.sleep(5)
 
     def is_element_present(self, how, what):
