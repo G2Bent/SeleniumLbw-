@@ -1,8 +1,11 @@
 from public.Hg_Exception import *
 import json,urllib.request
-def verify_code(phone):
+def verify_code(code):
     code_dict = None
-    url = 'http://120.25.81.114:23301/api/User/getphoneverifycode?phone='+str(phone)+'&type=1'
+    if "@" in str(code):
+        url = 'http://112.74.29.84:23301/api/User/getemailverifycode?email='+str(code)+'&type=1'
+    else:
+        url = 'http://112.74.29.84:23301/api/User/getphoneverifycode?phone='+str(code)+'&type=1'
     try:
         code_dict = json.loads(urllib.request.urlopen(url).read())
     except Exception as e :
@@ -16,14 +19,17 @@ def verify_code(phone):
         raise ApiOpenException
 
 #获取德雅个人信息邮箱绑定验证码
-def email_code(email):
+def email_code(code):
     code_dict = None
-    url = 'http://192.168.2.72:5001/api/User/getemailverifycode?email='+str(email)+'&type=3'
+    if '@' in str(code):
+        url = 'http://112.74.29.84:23301/api/User/getemailverifycode?email='+str(code)+'&type=3'
+    else:
+        url = 'http://112.74.29.84:23301/api/User/getphoneverifycode?phone='+str(code)+'&type=3'
     try:
         code_dict=json.loads(urllib.request.urlopen(url).read())
     except Exception as e:
         print(e)
-    print(code_dict)
+    # print(code_dict)
     if code_dict != None:
         if code_dict['success'] == True:
             # print(code_dict['data']['verifycode'])
