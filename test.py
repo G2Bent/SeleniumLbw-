@@ -35,11 +35,27 @@ class Baidu(unittest.TestCase):
         driver.find_element_by_id("su").click()
         time.sleep(2)
         driver.close()
+    #百度搜索用例
+    def test_baidu_search1(self):
+        driver = self.driver
+        driver.get(self.base_url+'/')
+        now = time.strftime("%Y-%m-%d %H_%M_%S")
+        try:
+            driver.find_element_by_id("kw").send_keys("selenium")
+        except:
+            driver.get_screenshot_as_file("%s.png"%now)
 
+        driver.find_element_by_id("su").click()
+        time.sleep(2)
+        driver.close()
     def tearDown(self):
         self.driver.quit()
         self.assertEqual([],self.verificationError)
 
+    def suite(self):
+        suite = unittest.TestSuite()
+        suite.addTest(Baidu("test_baidu_search"))
+        suite.addTest(Baidu("test_baidu_search1"))
+        return suite
 if __name__=="__main__":
-    if __name__ == '__main__':
-        unittest.main()
+    unittest.main(defaultTest='suite')

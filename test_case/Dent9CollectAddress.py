@@ -7,6 +7,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 import unittest, time, re ,HTMLTestRunner,os,random
 from public import Data
+from selenium.webdriver.common.action_chains import *
 
 class CollectAddressTest(unittest.TestCase):
     def setUp(self):
@@ -34,10 +35,12 @@ class CollectAddressTest(unittest.TestCase):
         driver.find_element_by_id("btn_login").click()
         time.sleep(10)
         # 点击收货地址菜单
-        driver.get("http://test.dent-lab.com/user/address.html")
+        dr = driver.find_element_by_xpath('//*[@id="app"]/div[2]/ul/li[2]/a')
+        ActionChains(driver).move_to_element(dr).perform()
+        dr.click()
         time.sleep(3)
         #点击添加新收货地址
-        driver.find_element_by_xpath('//*[@id="btn_add_address"]').click()
+        driver.find_element_by_xpath('//*[@id="btn_increase_address"]').click()
         driver.find_element_by_xpath('//*[@id="txt_username"]').send_keys(self.name)#输入用户名字
         driver.find_element_by_xpath('//*[@id="txt_mobile"]').send_keys(self.phone)#输入用户手机号码
         driver.find_element_by_xpath('//*[@id="add-province"]').click()#点击省
@@ -45,10 +48,12 @@ class CollectAddressTest(unittest.TestCase):
         driver.find_element_by_xpath('//*[@id="add-city"]').click()#点击市
         driver.find_element_by_xpath('//*[@id="add-city"]/option[1]').click()#选择市
         driver.find_element_by_xpath('//*[@id="add-district"]').click()#点击区
-        driver.find_element_by_xpath('//*[@id="add-district"]/option[1]').click()#选择区
+        # ActionChains(driver).move_to_element(driver.find_element_by_xpath('//*[@id="add-district"]/option[3]'))
+        driver.find_element_by_xpath('//*[@id="add-district"]/option[3]').click()  # 选择区
         print(driver.find_element_by_xpath('//*[@id="add-district"]/option[1]').text)
-        driver.find_element_by_xpath('//*[@id="app"]/div[3]/div/div[5]/textarea').send_keys(self.text)#输入详细地址信息
-        driver.find_element_by_xpath('//*[@id="app"]/div[3]/div/div[6]/input').click()#勾选默认地址
+        driver.find_element_by_xpath('//*[@id="app"]/div[4]/div/div[5]/textarea').clear()
+        driver.find_element_by_xpath('//*[@id="app"]/div[4]/div/div[5]/textarea').send_keys(self.text)#输入详细地址信息
+        driver.find_element_by_xpath('//*[@id="cd_default"]').click()#勾选默认地址
         driver.find_element_by_xpath('//*[@id="btn_save_increase"]').click()#点击确认
         time.sleep(5)
 
@@ -62,10 +67,12 @@ class CollectAddressTest(unittest.TestCase):
         driver.find_element_by_id("btn_login").click()
         time.sleep(5)
         # 点击收货地址菜单
-        driver.get("http://test.dent-lab.com/user/address.html")
+        dr = driver.find_element_by_xpath('//*[@id="app"]/div[2]/ul/li[2]/a')
+        ActionChains(driver).move_to_element(dr).perform()
+        dr.click()
         time.sleep(3)
         #点击添加新收货地址
-        driver.find_element_by_xpath('//*[@id="btn_add_address"]').click()
+        driver.find_element_by_xpath('//*[@id="btn_increase_address"]').click()
         driver.find_element_by_xpath('//*[@id="txt_username"]').send_keys('n')#输入用户名字
         driver.find_element_by_xpath('//*[@id="txt_mobile"]').send_keys(self.phone)#输入用户手机号码
         time.sleep(5)
@@ -80,10 +87,12 @@ class CollectAddressTest(unittest.TestCase):
         driver.find_element_by_id("btn_login").click()
         time.sleep(10)
         # 点击收货地址菜单
-        driver.get("http://test.dent-lab.com/user/address.html")
+        dr = driver.find_element_by_xpath('//*[@id="app"]/div[2]/ul/li[2]/a')
+        ActionChains(driver).move_to_element(dr).perform()
+        dr.click()
         time.sleep(3)
         #点击添加新收货地址
-        driver.find_element_by_xpath('//*[@id="btn_add_address"]').click()
+        driver.find_element_by_xpath('//*[@id="btn_increase_address"]').click()
         driver.find_element_by_xpath('//*[@id="txt_username"]').send_keys(self.name)#输入用户名字
         driver.find_element_by_xpath('//*[@id="txt_mobile"]').send_keys(self.errorphone)#输入用户手机号码
         driver.find_element_by_xpath('//*[@id="add-province"]').click()#点击省
@@ -99,10 +108,12 @@ class CollectAddressTest(unittest.TestCase):
         driver.find_element_by_id("btn_login").click()
         time.sleep(10)
         # 点击收货地址菜单
-        driver.get("http://test.dent-lab.com/user/address.html")
+        dr = driver.find_element_by_xpath('//*[@id="app"]/div[2]/ul/li[2]/a')
+        ActionChains(driver).move_to_element(dr).perform()
+        dr.click()
         time.sleep(3)
         #点击添加新收货地址
-        driver.find_element_by_xpath('//*[@id="btn_add_address"]').click()
+        driver.find_element_by_xpath('//*[@id="btn_increase_address"]').click()
         driver.find_element_by_xpath('//*[@id="btn_save_increase"]').click()#点击确认
         time.sleep(5)
 
@@ -116,10 +127,12 @@ class CollectAddressTest(unittest.TestCase):
         driver.find_element_by_id("btn_login").click()
         time.sleep(10)
         # 点击收货地址菜单
-        driver.get("http://test.dent-lab.com/user/address.html")
+        dr = driver.find_element_by_xpath('//*[@id="app"]/div[2]/ul/li[2]/a')
+        ActionChains(driver).move_to_element(dr).perform()
+        dr.click()
         time.sleep(3)
         #点击添加新收货地址
-        driver.find_element_by_xpath('//*[@id="btn_add_address"]').click()
+        driver.find_element_by_xpath('//*[@id="btn_increase_address"]').click()
         driver.find_element_by_xpath('//*[@id="txt_username"]').send_keys(self.name)#输入用户名字
         driver.find_element_by_xpath('//*[@id="txt_mobile"]').send_keys(self.phone)#输入用户手机号码
         driver.find_element_by_xpath('//*[@id="add-province"]').click()#点击省
@@ -128,7 +141,6 @@ class CollectAddressTest(unittest.TestCase):
         driver.find_element_by_xpath('//*[@id="add-city"]/option[1]').click()#选择市
         driver.find_element_by_xpath('//*[@id="add-district"]').click()#点击区
         driver.find_element_by_xpath('//*[@id="add-district"]/option[1]').click()#选择区
-        print(driver.find_element_by_xpath('//*[@id="add-district"]/option[1]').text)
         driver.find_element_by_xpath('//*[@id="btn_save_increase"]').click()#点击确认
         time.sleep(5)
 
@@ -142,9 +154,11 @@ class CollectAddressTest(unittest.TestCase):
         driver.find_element_by_id("btn_login").click()
         time.sleep(10)
         # 点击收货地址菜单
-        driver.get("http://test.dent-lab.com/user/address.html")
+        dr = driver.find_element_by_xpath('//*[@id="app"]/div[2]/ul/li[2]/a')
+        ActionChains(driver).move_to_element(dr).perform()
+        dr.click()
         time.sleep(3)
-        #点击删除收货地址，默认是第一个
+        #点击删除收货地址(默认是第一个)
         driver.find_element_by_xpath('//*[@id="btn_delete_address"]').click()
         time.sleep(5)
 
