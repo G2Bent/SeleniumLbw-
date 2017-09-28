@@ -25,7 +25,7 @@ class CollectAddressTest(unittest.TestCase):
         self.errorpwd = "aa"
         self.text = "我也不知道啊"
 
-    def test_CllectAddress1(self):
+    def test_CllectAdd1(self):
         '''添加地址成功'''
         driver = self.driver
         driver.get(self.base_url)
@@ -50,7 +50,7 @@ class CollectAddressTest(unittest.TestCase):
         driver.find_element_by_xpath('//*[@id="add-district"]').click()#点击区
         # ActionChains(driver).move_to_element(driver.find_element_by_xpath('//*[@id="add-district"]/option[3]'))
         driver.find_element_by_xpath('//*[@id="add-district"]/option[3]').click()  # 选择区
-        print(driver.find_element_by_xpath('//*[@id="add-district"]/option[1]').text)
+        # print(driver.find_element_by_xpath('//*[@id="add-district"]/option[1]').text)
         driver.find_element_by_xpath('//*[@id="app"]/div[4]/div/div[5]/textarea').clear()
         driver.find_element_by_xpath('//*[@id="app"]/div[4]/div/div[5]/textarea').send_keys(self.text)#输入详细地址信息
         driver.find_element_by_xpath('//*[@id="cd_default"]').click()#勾选默认地址
@@ -191,17 +191,30 @@ class CollectAddressTest(unittest.TestCase):
     def tearDown(self):
         driver = self.driver
         now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
-        img_path = os.getcwd() + '\\image\\' + str(now) + '.png'
+        img_path = r'..\image\添加地址\\' + now + '.png'
         driver.save_screenshot(img_path)
         time.sleep(2)
         driver.quit()
         self.assertEqual([], self.verificationErrors)
 
-    def suite(self):
-        suite = unittest.TestSuite()
-        for i in range(1,6):
-            suite.addTest(CollectAddressTest("test_CllectAdd%s"%str(i)))
-        return suite
+    # def suite(self):
+    #     suite = unittest.TestSuite()
+    #     for i in range(1,6):
+    #         suite.addTest(CollectAddressTest("test_CllectAdd%s"%str(i)))
+    #     return suite
 
 if __name__=="__main__":
-    unittest.main(defaultTest='suite')
+    testunit = unittest.TestSuite()
+    # 将测试用例加入到测试容器中
+    for i in range(1, 8):
+        testunit.addTest(CollectAddressTest("test_CllectAdd%s"%str(i)))
+    now = time.strftime("%Y-%m-%d %H_%M_%S")
+    report_name = r'..\report\\' + str(now) + '_result.html'
+    fp = open(report_name, 'wb')
+    Runner = HTMLTestRunner.HTMLTestRunner(
+        stream=fp,
+        title='添加地址测试报告',
+        description='测试用例执行情况'
+    )
+    Runner.run(testunit)
+    fp.close()

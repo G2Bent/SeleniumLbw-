@@ -16,17 +16,24 @@ class BAIDU(unittest.TestCase):
         driver.get(self.base_url+"/")
         driver.find_element_by_id("kw").clear()
         driver.find_element_by_id("kw").send_keys("林你妹哦")
-        driver.find_element_by_id("su").click()
+        # driver.find_element_by_id("su").click()
         time.sleep(3)
 
-    def tearDown(self):
-        driver = self.driver
-        now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
+    def screenshort(self):
+        now = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime(time.time()))
         # 必须要打印路径HTMLTestRunner才能捕获并且生成路径，\image\**.png 是获取路径的条件，必须这样的目录
-        # img_path = 'E:\\Test_png\\image\\'+now+'.png'
-        img_path = os.getcwd() + '\\image\\' + str(now) + '.png'
-        # print(img_path)
-        driver.save_screenshot(img_path)
+        # img_path = 'E:\\Test_png\\'+now+'.png'
+        img_path = 'screenshort\\' + now + '.png'
+        self.driver.get_screenshot_as_file(img_path)
+
+    def tearDown(self):
+        # driver = self.driver
+        # now = time.strftime("%Y%m%d", time.localtime(time.time()))
+        # # 必须要打印路径HTMLTestRunner才能捕获并且生成路径，\image\**.png 是获取路径的条件，必须这样的目录
+        # # img_path = 'E:\\Test_png\\'+now+'.png'
+        # img_path = os.getcwd() + '\\image\\' + str(now) + '.jpg'
+        # # print(img_path)
+        # driver.save_screenshot(img_path)
         time.sleep(2)
         self.driver.quit()
 

@@ -116,7 +116,7 @@ class EmailRegisterTest(unittest.TestCase):
     def tearDown(self):
         driver = self.driver
         now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
-        img_path = os.getcwd() + '\\image\\' + str(now) + '.png'
+        img_path = r'..\image\邮箱注册\\' + now + '.png'
         driver.save_screenshot(img_path)
         time.sleep(2)
         driver.quit()
@@ -128,4 +128,17 @@ class EmailRegisterTest(unittest.TestCase):
             suite.addTest(EmailRegisterTest("test_UpdatePwd%s"%str(i)))
         return suite
 if __name__ == '__main__':
-    unittest.main(defaultTest='suite')
+    testunit = unittest.TestSuite()
+    # 将测试用例加入到测试容器中
+    for i in range(1, 6):
+        testunit.addTest(EmailRegisterTest("test_UpdatePwd%s"%str(i)))
+    now = time.strftime("%Y-%m-%d %H_%M_%S")
+    report_name = r'..\report\\' + str(now) + '_result.html'
+    fp = open(report_name, 'wb')
+    Runner = HTMLTestRunner.HTMLTestRunner(
+        stream=fp,
+        title='邮箱注册测试报告',
+        description='测试用例执行情况'
+    )
+    Runner.run(testunit)
+    fp.close()

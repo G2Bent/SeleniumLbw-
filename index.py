@@ -1,7 +1,7 @@
 import os,HTMLTestRunner,unittest,time
 
 def create_suite():
-    TestSuite = unittest.TestSuite()
+    TestSuite = unittest.TestSuite()#测试集
     test_dir = os.getcwd()+'\\test_case\\'
 
     discover = unittest.defaultTestLoader.discover(
@@ -10,7 +10,7 @@ def create_suite():
         top_level_dir=None
     )
 
-    print (discover)
+    # print (discover)
 
     for test_case  in discover:
         TestSuite.addTests(test_case)
