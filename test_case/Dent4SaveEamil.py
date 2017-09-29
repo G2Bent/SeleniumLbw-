@@ -64,8 +64,6 @@ class SaveEmailTest(unittest.TestCase):
         driver.find_element_by_xpath('//*[@id="btn_edit_email"]').click()
         driver.find_element_by_xpath('//*[@id="txt_email"]').send_keys("944921374@qq.com")
         driver.find_element_by_xpath('//*[@id="btn_verify"]').click()
-        # driver.find_element_by_xpath('//*[@id="txt_verify_code"]').send_keys(Data.email_code("944921374@qq.com"))
-        # driver.find_element_by_xpath('//*[@id="btn_save_email"]').click()
         time.sleep(5)
 
     def test_SaveEmail4(self):

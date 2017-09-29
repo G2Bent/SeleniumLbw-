@@ -12,7 +12,7 @@ class EmailRegisterTest(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(30)
-        self.base_url = "http://test.dent-lab.com/register.html"
+        self.base_url = "http://test.dent-lab.com/login.html"
         self.verificationErrors = []
         self.accept_next_alert = True
 
@@ -22,6 +22,7 @@ class EmailRegisterTest(unittest.TestCase):
         driver = self.driver
         driver.get(self.base_url)
         driver.maximize_window()
+        driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[3]/a[1]').click()
         driver.find_element_by_id("txt_user").send_keys(email)
         driver.find_element_by_id("btn_verify").click()
         driver.find_element_by_id("txt_verify_code").send_keys(Data.verify_code("83838@sina.com"))
@@ -35,6 +36,7 @@ class EmailRegisterTest(unittest.TestCase):
         driver = self.driver
         driver.get(self.base_url)
         driver.maximize_window()
+        driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[3]/a[1]').click()
         driver.find_element_by_id("txt_user").send_keys("14423.com")
         driver.find_element_by_id("btn_reg").click()
         error = driver.find_element_by_id("error_tips").text
@@ -47,6 +49,7 @@ class EmailRegisterTest(unittest.TestCase):
         driver = self.driver
         driver.get(self.base_url)
         driver.maximize_window()
+        driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[3]/a[1]').click()
         driver.find_element_by_id("txt_user").send_keys("9823892@qq.com")
         driver.find_element_by_id("btn_verify").click()
         driver.find_element_by_id("txt_verify_code").send_keys("111111")
@@ -62,6 +65,7 @@ class EmailRegisterTest(unittest.TestCase):
         driver = self.driver
         driver.get(self.base_url)
         driver.maximize_window()
+        driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[3]/a[1]').click()
         driver.find_element_by_id("txt_user").send_keys("89898233@qq.com")
         driver.find_element_by_id("btn_verify").click()
         driver.find_element_by_id("txt_verify_code").send_keys(Data.verify_code("89898233@qq.com"))
@@ -77,6 +81,7 @@ class EmailRegisterTest(unittest.TestCase):
         driver = self.driver
         driver.get(self.base_url)
         driver.maximize_window()
+        driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[3]/a[1]').click()
         driver.find_element_by_id("txt_user").send_keys("9292929@qq.com")
         driver.find_element_by_id("btn_verify").click()
         driver.find_element_by_id("txt_verify_code").send_keys(Data.verify_code("9292929@qq.com"))

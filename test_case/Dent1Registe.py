@@ -12,21 +12,22 @@ class RegisterTest(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(30)
-        self.base_url = "http://test.dent-lab.com/register.html"
+        self.base_url = "http://test.dent-lab.com/login.html"
         self.verificationErrors = []
         self.accept_next_alert = True
+        self.phone= "18814128583"
 
     def test_Register1(self):
         '''测试用户注册成功'''
-        phone = "18800000052"
         driver = self.driver
         driver.get(self.base_url)
         driver.maximize_window()
-        driver.find_element_by_id("txt_user").send_keys(phone)
+        driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[3]/a[1]').click()
+        driver.find_element_by_id("txt_user").send_keys(self.phone)
         driver.find_element_by_id("btn_verify").click()
-        driver.find_element_by_id("txt_verify_code").send_keys(Data.verify_code(18800000052))
-        driver.find_element_by_id("pwd_set").send_keys("lzb123456")
-        driver.find_element_by_id("pwd_repeat").send_keys("lzb123456")
+        driver.find_element_by_id("txt_verify_code").send_keys(Data.verify_code(self.phone))
+        driver.find_element_by_id("pwd_set").send_keys("a123456")
+        driver.find_element_by_id("pwd_repeat").send_keys("a123456")
         driver.find_element_by_id("btn_reg").click()
         time.sleep(5)
 
@@ -35,6 +36,7 @@ class RegisterTest(unittest.TestCase):
         driver = self.driver
         driver.get(self.base_url)
         driver.maximize_window()
+        driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[3]/a[1]').click()
         driver.find_element_by_id("txt_user").send_keys("188141283")
         driver.find_element_by_id("btn_reg").click()
         error = driver.find_element_by_id("error_tips").text
@@ -47,7 +49,8 @@ class RegisterTest(unittest.TestCase):
         driver = self.driver
         driver.get(self.base_url)
         driver.maximize_window()
-        driver.find_element_by_id("txt_user").send_keys("18810000005")
+        driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[3]/a[1]').click()
+        driver.find_element_by_id("txt_user").send_keys("15500000000")
         driver.find_element_by_id("btn_verify").click()
         driver.find_element_by_id("txt_verify_code").send_keys("111111")
         driver.find_element_by_id("pwd_set").send_keys("a123456")
@@ -62,9 +65,10 @@ class RegisterTest(unittest.TestCase):
         driver = self.driver
         driver.get(self.base_url)
         driver.maximize_window()
-        driver.find_element_by_id("txt_user").send_keys("18810000008")
+        driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[3]/a[1]').click()
+        driver.find_element_by_id("txt_user").send_keys("15500000000")
         driver.find_element_by_id("btn_verify").click()
-        driver.find_element_by_id("txt_verify_code").send_keys(Data.verify_code(18810000008))
+        driver.find_element_by_id("txt_verify_code").send_keys(Data.verify_code("15500000000"))
         driver.find_element_by_id("pwd_set").send_keys("a1456")
         driver.find_element_by_id("pwd_repeat").send_keys("a1456")
         driver.find_element_by_id("btn_reg").click()
@@ -77,9 +81,10 @@ class RegisterTest(unittest.TestCase):
         driver = self.driver
         driver.get(self.base_url)
         driver.maximize_window()
-        driver.find_element_by_id("txt_user").send_keys("18800000009")
+        driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[3]/a[1]').click()
+        driver.find_element_by_id("txt_user").send_keys("18800000000")
         driver.find_element_by_id("btn_verify").click()
-        driver.find_element_by_id("txt_verify_code").send_keys(Data.verify_code(18800000009))
+        driver.find_element_by_id("txt_verify_code").send_keys(Data.verify_code(18800000000))
         driver.find_element_by_id("pwd_set").send_keys("a12345678")
         driver.find_element_by_id("pwd_repeat").send_keys("a12344")
         driver.find_element_by_id("btn_reg").click()
@@ -118,7 +123,6 @@ class RegisterTest(unittest.TestCase):
         now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
         img_path = r'..\image\手机注册\\' + now + '.png'
         driver.save_screenshot(img_path)
-        # driver.get_screenshot_as_file()
         time.sleep(2)
         driver.quit()
         self.assertEqual([], self.verificationErrors)
