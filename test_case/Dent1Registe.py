@@ -81,6 +81,7 @@ class RegisterTest(unittest.TestCase):
         driver = self.driver
         driver.get(self.base_url)
         driver.maximize_window()
+        #//*[@id="app"]/div/div[2]/div[3]/a[1]     注册xpath
         driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[3]/a[1]').click()
         driver.find_element_by_id("txt_user").send_keys("18800000000")
         driver.find_element_by_id("btn_verify").click()

@@ -1,0 +1,204 @@
+1505267586670	geckodriver	INFO	Listening on 127.0.0.1:7900
+1505267588777	geckodriver::marionette	INFO	Starting browser \\?\D:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1505267589486	addons.manager	ERROR	startup failed: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIFile.create]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/FileUtils.jsm :: FileUtils_getDir :: line 70"  data: no] Stack trace: FileUtils_getDir()@resource://gre/modules/FileUtils.jsm:70 < FileUtils_getFile()@resource://gre/modules/FileUtils.jsm:42 < validateBlocklist()@resource://gre/modules/AddonManager.jsm:656 < startup()@resource://gre/modules/AddonManager.jsm:816 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file://///%3F/D:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 1596: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+1505267589771	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 2465: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 3137: TypeError: AddonManagerInternal._getProviderByName(...) is undefined
+1505267590991	Marionette	INFO	Listening on port 7908
+1505267591009	Marionette	INFO	Listening on port 7908
+1505267591335	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=tes&json=1&p=3&sid=1442_21089_17001_20927&req=2&csor=3&pwd=te&cb=jQuery110207246878613559425_1505267591648&_=1505267591652, line 1: TypeError: jQuery110207246878613559425_1505267591648 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=te&json=1&p=3&sid=1442_21089_17001_20927&req=2&csor=2&pwd=t&cb=jQuery110207246878613559425_1505267591648&_=1505267591651, line 1: TypeError: jQuery110207246878613559425_1505267591648 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=t&json=1&p=3&sid=1442_21089_17001_20927&req=2&csor=1&cb=jQuery110207246878613559425_1505267591648&_=1505267591650, line 1: TypeError: jQuery110207246878613559425_1505267591648 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=test&json=1&p=3&sid=1442_21089_17001_20927&req=2&csor=4&pwd=tes&cb=jQuery110207246878613559425_1505267591648&_=1505267591653, line 1: TypeError: jQuery110207246878613559425_1505267591648 is not a function
+1505267592152	Marionette	INFO	New connections will no longer be accepted
+1505267669428	geckodriver	INFO	Listening on 127.0.0.1:8113
+1505267671500	geckodriver::marionette	INFO	Starting browser \\?\D:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1505267671666	addons.manager	ERROR	startup failed: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIFile.create]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/FileUtils.jsm :: FileUtils_getDir :: line 70"  data: no] Stack trace: FileUtils_getDir()@resource://gre/modules/FileUtils.jsm:70 < FileUtils_getFile()@resource://gre/modules/FileUtils.jsm:42 < validateBlocklist()@resource://gre/modules/AddonManager.jsm:656 < startup()@resource://gre/modules/AddonManager.jsm:816 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file://///%3F/D:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 1596: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+1505267671899	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 2465: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 3137: TypeError: AddonManagerInternal._getProviderByName(...) is undefined
+1505267673076	Marionette	INFO	Listening on port 8121
+1505267673085	Marionette	INFO	Listening on port 8121
+1505267673532	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=te&json=1&p=3&sid=1449_21122_18560_23384_20718&req=2&csor=2&pwd=t&cb=jQuery110207240520093371358_1505267673824&_=1505267673827, line 1: TypeError: jQuery110207240520093371358_1505267673824 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=t&json=1&p=3&sid=1449_21122_18560_23384_20718&req=2&csor=1&cb=jQuery110207240520093371358_1505267673824&_=1505267673826, line 1: TypeError: jQuery110207240520093371358_1505267673824 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=tes&json=1&p=3&sid=1449_21122_18560_23384_20718&req=2&csor=3&pwd=te&cb=jQuery110207240520093371358_1505267673824&_=1505267673828, line 1: TypeError: jQuery110207240520093371358_1505267673824 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=test&json=1&p=3&sid=1449_21122_18560_23384_20718&req=2&csor=4&pwd=tes&cb=jQuery110207240520093371358_1505267673824&_=1505267673829, line 1: TypeError: jQuery110207240520093371358_1505267673824 is not a function
+1505267675562	Marionette	INFO	New connections will no longer be accepted
+1505267726335	geckodriver	INFO	Listening on 127.0.0.1:8249
+1505267728418	geckodriver::marionette	INFO	Starting browser \\?\D:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1505267728576	addons.manager	ERROR	startup failed: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIFile.create]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/FileUtils.jsm :: FileUtils_getDir :: line 70"  data: no] Stack trace: FileUtils_getDir()@resource://gre/modules/FileUtils.jsm:70 < FileUtils_getFile()@resource://gre/modules/FileUtils.jsm:42 < validateBlocklist()@resource://gre/modules/AddonManager.jsm:656 < startup()@resource://gre/modules/AddonManager.jsm:816 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file://///%3F/D:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 1596: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+1505267728810	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 2465: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 3137: TypeError: AddonManagerInternal._getProviderByName(...) is undefined
+1505267729907	Marionette	INFO	Listening on port 8257
+1505267729926	Marionette	INFO	Listening on port 8257
+1505267729941	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=t&json=1&p=3&sid=1445_21104_20928&req=2&csor=1&cb=jQuery110203400058506392566_1505267730217&_=1505267730219, line 1: TypeError: jQuery110203400058506392566_1505267730217 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=test&json=1&p=3&sid=1445_21104_20928&req=2&csor=4&pwd=tes&cb=jQuery110203400058506392566_1505267730217&_=1505267730222, line 1: TypeError: jQuery110203400058506392566_1505267730217 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=te&json=1&p=3&sid=1445_21104_20928&req=2&csor=2&pwd=t&cb=jQuery110203400058506392566_1505267730217&_=1505267730220, line 1: TypeError: jQuery110203400058506392566_1505267730217 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=tes&json=1&p=3&sid=1445_21104_20928&req=2&csor=3&pwd=te&cb=jQuery110203400058506392566_1505267730217&_=1505267730221, line 1: TypeError: jQuery110203400058506392566_1505267730217 is not a function
+1505267730679	Marionette	INFO	New connections will no longer be accepted
+1505267818341	geckodriver	INFO	Listening on 127.0.0.1:8426
+1505267820411	geckodriver::marionette	INFO	Starting browser \\?\D:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1505267820575	addons.manager	ERROR	startup failed: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIFile.create]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/FileUtils.jsm :: FileUtils_getDir :: line 70"  data: no] Stack trace: FileUtils_getDir()@resource://gre/modules/FileUtils.jsm:70 < FileUtils_getFile()@resource://gre/modules/FileUtils.jsm:42 < validateBlocklist()@resource://gre/modules/AddonManager.jsm:656 < startup()@resource://gre/modules/AddonManager.jsm:816 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file://///%3F/D:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 1596: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+1505267820802	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 2465: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 3137: TypeError: AddonManagerInternal._getProviderByName(...) is undefined
+1505267821891	Marionette	INFO	Listening on port 8434
+1505267821968	Marionette	WARN	TLS certificate errors will be ignored for this session
+1505267822002	Marionette	INFO	Listening on port 8434
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=te&json=1&p=3&sid=1452_21079_17001_22158&req=2&csor=2&pwd=t&cb=jQuery110202928130451495099_1505267822254&_=1505267822257, line 1: TypeError: jQuery110202928130451495099_1505267822254 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=t&json=1&p=3&sid=1452_21079_17001_22158&req=2&csor=1&cb=jQuery110202928130451495099_1505267822254&_=1505267822256, line 1: TypeError: jQuery110202928130451495099_1505267822254 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=tes&json=1&p=3&sid=1452_21079_17001_22158&req=2&csor=3&pwd=te&cb=jQuery110202928130451495099_1505267822254&_=1505267822258, line 1: TypeError: jQuery110202928130451495099_1505267822254 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=test&json=1&p=3&sid=1452_21079_17001_22158&req=2&csor=4&pwd=tes&cb=jQuery110202928130451495099_1505267822254&_=1505267822259, line 1: TypeError: jQuery110202928130451495099_1505267822254 is not a function
+1505267822712	Marionette	INFO	New connections will no longer be accepted
+1505267846773	geckodriver	INFO	Listening on 127.0.0.1:8507
+1505267848824	geckodriver::marionette	INFO	Starting browser \\?\D:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1505267848986	addons.manager	ERROR	startup failed: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIFile.create]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/FileUtils.jsm :: FileUtils_getDir :: line 70"  data: no] Stack trace: FileUtils_getDir()@resource://gre/modules/FileUtils.jsm:70 < FileUtils_getFile()@resource://gre/modules/FileUtils.jsm:42 < validateBlocklist()@resource://gre/modules/AddonManager.jsm:656 < startup()@resource://gre/modules/AddonManager.jsm:816 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file://///%3F/D:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 1596: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+1505267849218	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 2465: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 3137: TypeError: AddonManagerInternal._getProviderByName(...) is undefined
+1505267850278	Marionette	INFO	Listening on port 8515
+1505267850287	Marionette	INFO	Listening on port 8515
+1505267850347	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=t&json=1&p=3&sid=1463_19033_13548_21101_23384_22159&req=2&csor=1&cb=jQuery110203896343992492305_1505267850628&_=1505267850630, line 1: TypeError: jQuery110203896343992492305_1505267850628 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=te&json=1&p=3&sid=1463_19033_13548_21101_23384_22159&req=2&csor=2&pwd=t&cb=jQuery110203896343992492305_1505267850628&_=1505267850631, line 1: TypeError: jQuery110203896343992492305_1505267850628 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=tes&json=1&p=3&sid=1463_19033_13548_21101_23384_22159&req=2&csor=3&pwd=te&cb=jQuery110203896343992492305_1505267850628&_=1505267850632, line 1: TypeError: jQuery110203896343992492305_1505267850628 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=test&json=1&p=3&sid=1463_19033_13548_21101_23384_22159&req=2&csor=4&pwd=tes&cb=jQuery110203896343992492305_1505267850628&_=1505267850633, line 1: TypeError: jQuery110203896343992492305_1505267850628 is not a function
+1505267851105	Marionette	INFO	New connections will no longer be accepted
+1505268899986	geckodriver	INFO	Listening on 127.0.0.1:9798
+1505268902045	geckodriver::marionette	INFO	Starting browser \\?\D:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1505268902208	addons.manager	ERROR	startup failed: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIFile.create]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/FileUtils.jsm :: FileUtils_getDir :: line 70"  data: no] Stack trace: FileUtils_getDir()@resource://gre/modules/FileUtils.jsm:70 < FileUtils_getFile()@resource://gre/modules/FileUtils.jsm:42 < validateBlocklist()@resource://gre/modules/AddonManager.jsm:656 < startup()@resource://gre/modules/AddonManager.jsm:816 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file://///%3F/D:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 1596: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+1505268902412	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 2465: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 3137: TypeError: AddonManagerInternal._getProviderByName(...) is undefined
+1505268903510	Marionette	INFO	Listening on port 9811
+1505268903518	Marionette	INFO	Listening on port 9811
+1505268903572	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=test&json=1&p=3&sid=1440_12897_21126_20927&req=2&csor=4&pwd=tes&cb=jQuery110205294756911884002_1505268905061&_=1505268905066, line 1: TypeError: jQuery110205294756911884002_1505268905061 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=t&json=1&p=3&sid=1440_12897_21126_20927&req=2&csor=1&cb=jQuery110205294756911884002_1505268905061&_=1505268905063, line 1: TypeError: jQuery110205294756911884002_1505268905061 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=te&json=1&p=3&sid=1440_12897_21126_20927&req=2&csor=2&pwd=t&cb=jQuery110205294756911884002_1505268905061&_=1505268905064, line 1: TypeError: jQuery110205294756911884002_1505268905061 is not a function
+1505268905599	Marionette	INFO	New connections will no longer be accepted
+1505268994312	geckodriver	INFO	Listening on 127.0.0.1:9879
+1505268996378	geckodriver::marionette	INFO	Starting browser \\?\D:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1505268996540	addons.manager	ERROR	startup failed: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIFile.create]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/FileUtils.jsm :: FileUtils_getDir :: line 70"  data: no] Stack trace: FileUtils_getDir()@resource://gre/modules/FileUtils.jsm:70 < FileUtils_getFile()@resource://gre/modules/FileUtils.jsm:42 < validateBlocklist()@resource://gre/modules/AddonManager.jsm:656 < startup()@resource://gre/modules/AddonManager.jsm:816 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file://///%3F/D:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 1596: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+1505268996747	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 2465: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 3137: TypeError: AddonManagerInternal._getProviderByName(...) is undefined
+1505268997989	Marionette	INFO	Listening on port 9885
+1505268998000	Marionette	INFO	Listening on port 9885
+1505268998400	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=t&json=1&p=3&sid=24397_1434_21121_18560_17001_20928&req=2&csor=1&cb=jQuery110201387985200208961_1505268998836&_=1505268998838, line 1: TypeError: jQuery110201387985200208961_1505268998836 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=tes&json=1&p=3&sid=24397_1434_21121_18560_17001_20928&req=2&csor=3&pwd=te&cb=jQuery110201387985200208961_1505268998836&_=1505268998840, line 1: TypeError: jQuery110201387985200208961_1505268998836 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=te&json=1&p=3&sid=24397_1434_21121_18560_17001_20928&req=2&csor=2&pwd=t&cb=jQuery110201387985200208961_1505268998836&_=1505268998839, line 1: TypeError: jQuery110201387985200208961_1505268998836 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=test&json=1&p=3&sid=24397_1434_21121_18560_17001_20928&req=2&csor=4&pwd=tes&cb=jQuery110201387985200208961_1505268998836&_=1505268998841, line 1: TypeError: jQuery110201387985200208961_1505268998836 is not a function
+1505269001686	Marionette	INFO	New connections will no longer be accepted
+1505269089818	geckodriver	INFO	Listening on 127.0.0.1:9933
+1505269091890	geckodriver::marionette	INFO	Starting browser \\?\D:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1505269092051	addons.manager	ERROR	startup failed: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIFile.create]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/FileUtils.jsm :: FileUtils_getDir :: line 70"  data: no] Stack trace: FileUtils_getDir()@resource://gre/modules/FileUtils.jsm:70 < FileUtils_getFile()@resource://gre/modules/FileUtils.jsm:42 < validateBlocklist()@resource://gre/modules/AddonManager.jsm:656 < startup()@resource://gre/modules/AddonManager.jsm:816 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file://///%3F/D:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 1596: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+1505269092250	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 2465: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 3137: TypeError: AddonManagerInternal._getProviderByName(...) is undefined
+1505269093351	Marionette	INFO	Listening on port 9939
+1505269093358	Marionette	INFO	Listening on port 9939
+1505269093413	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=t&json=1&p=3&sid=24457_1465_21087_20719&req=2&csor=1&cb=jQuery1102010692537956401826_1505269093671&_=1505269093673, line 1: TypeError: jQuery1102010692537956401826_1505269093671 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=te&json=1&p=3&sid=24457_1465_21087_20719&req=2&csor=2&pwd=t&cb=jQuery1102010692537956401826_1505269093671&_=1505269093674, line 1: TypeError: jQuery1102010692537956401826_1505269093671 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=test&json=1&p=3&sid=24457_1465_21087_20719&req=2&csor=4&pwd=tes&cb=jQuery1102010692537956401826_1505269093671&_=1505269093676, line 1: TypeError: jQuery1102010692537956401826_1505269093671 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=tes&json=1&p=3&sid=24457_1465_21087_20719&req=2&csor=3&pwd=te&cb=jQuery1102010692537956401826_1505269093671&_=1505269093675, line 1: TypeError: jQuery1102010692537956401826_1505269093671 is not a function
+1505269094135	Marionette	INFO	New connections will no longer be accepted
+1505269134410	geckodriver	INFO	Listening on 127.0.0.1:10056
+1505269136471	geckodriver::marionette	INFO	Starting browser \\?\D:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1505269136633	addons.manager	ERROR	startup failed: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIFile.create]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/FileUtils.jsm :: FileUtils_getDir :: line 70"  data: no] Stack trace: FileUtils_getDir()@resource://gre/modules/FileUtils.jsm:70 < FileUtils_getFile()@resource://gre/modules/FileUtils.jsm:42 < validateBlocklist()@resource://gre/modules/AddonManager.jsm:656 < startup()@resource://gre/modules/AddonManager.jsm:816 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file://///%3F/D:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 1596: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+1505269136840	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 2465: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 3137: TypeError: AddonManagerInternal._getProviderByName(...) is undefined
+1505269138070	Marionette	INFO	Listening on port 10062
+1505269138075	Marionette	INFO	Listening on port 10062
+1505269138496	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=te&json=1&p=3&sid=1463_21110_17001_22074&req=2&csor=2&pwd=t&cb=jQuery110205254268846781345_1505269138768&_=1505269138771, line 1: TypeError: jQuery110205254268846781345_1505269138768 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=test&json=1&p=3&sid=1463_21110_17001_22074&req=2&csor=4&pwd=tes&cb=jQuery110205254268846781345_1505269138768&_=1505269138773, line 1: TypeError: jQuery110205254268846781345_1505269138768 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=t&json=1&p=3&sid=1463_21110_17001_22074&req=2&csor=1&cb=jQuery110205254268846781345_1505269138768&_=1505269138770, line 1: TypeError: jQuery110205254268846781345_1505269138768 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=tes&json=1&p=3&sid=1463_21110_17001_22074&req=2&csor=3&pwd=te&cb=jQuery110205254268846781345_1505269138768&_=1505269138772, line 1: TypeError: jQuery110205254268846781345_1505269138768 is not a function
+1505269139242	Marionette	INFO	New connections will no longer be accepted
+1505269243860	geckodriver	INFO	Listening on 127.0.0.1:10103
+1505269245932	geckodriver::marionette	INFO	Starting browser \\?\D:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1505269246096	addons.manager	ERROR	startup failed: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIFile.create]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/FileUtils.jsm :: FileUtils_getDir :: line 70"  data: no] Stack trace: FileUtils_getDir()@resource://gre/modules/FileUtils.jsm:70 < FileUtils_getFile()@resource://gre/modules/FileUtils.jsm:42 < validateBlocklist()@resource://gre/modules/AddonManager.jsm:656 < startup()@resource://gre/modules/AddonManager.jsm:816 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file://///%3F/D:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 1596: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+1505269246302	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 2465: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 3137: TypeError: AddonManagerInternal._getProviderByName(...) is undefined
+1505269247512	Marionette	INFO	Listening on port 10109
+1505269247523	Marionette	INFO	Listening on port 10109
+1505269247958	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=t&json=1&p=3&sid=1457_13549_21095_17001_23384_20930&req=2&csor=1&cb=jQuery110209678361668621694_1505269248224&_=1505269248226, line 1: TypeError: jQuery110209678361668621694_1505269248224 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=te&json=1&p=3&sid=1457_13549_21095_17001_23384_20930&req=2&csor=2&pwd=t&cb=jQuery110209678361668621694_1505269248224&_=1505269248227, line 1: TypeError: jQuery110209678361668621694_1505269248224 is not a function
+1505269248703	Marionette	INFO	New connections will no longer be accepted
+1505269258204	geckodriver	INFO	Listening on 127.0.0.1:10147
+1505269260276	geckodriver::marionette	INFO	Starting browser \\?\D:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1505269260439	addons.manager	ERROR	startup failed: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIFile.create]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/FileUtils.jsm :: FileUtils_getDir :: line 70"  data: no] Stack trace: FileUtils_getDir()@resource://gre/modules/FileUtils.jsm:70 < FileUtils_getFile()@resource://gre/modules/FileUtils.jsm:42 < validateBlocklist()@resource://gre/modules/AddonManager.jsm:656 < startup()@resource://gre/modules/AddonManager.jsm:816 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file://///%3F/D:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 1596: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+1505269260641	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 2465: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 3137: TypeError: AddonManagerInternal._getProviderByName(...) is undefined
+1505269261726	Marionette	INFO	Listening on port 10153
+1505269261740	Marionette	INFO	Listening on port 10153
+1505269261800	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=te&json=1&p=3&sid=1463_19035_21094_18559_17001_23384_20930&req=2&csor=2&pwd=t&cb=jQuery110209985074608219152_1505269262076&_=1505269262079, line 1: TypeError: jQuery110209985074608219152_1505269262076 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=test&json=1&p=3&sid=1463_19035_21094_18559_17001_23384_20930&req=2&csor=4&pwd=tes&cb=jQuery110209985074608219152_1505269262076&_=1505269262081, line 1: TypeError: jQuery110209985074608219152_1505269262076 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=tes&json=1&p=3&sid=1463_19035_21094_18559_17001_23384_20930&req=2&csor=3&pwd=te&cb=jQuery110209985074608219152_1505269262076&_=1505269262080, line 1: TypeError: jQuery110209985074608219152_1505269262076 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=t&json=1&p=3&sid=1463_19035_21094_18559_17001_23384_20930&req=2&csor=1&cb=jQuery110209985074608219152_1505269262076&_=1505269262078, line 1: TypeError: jQuery110209985074608219152_1505269262076 is not a function
+1505269262544	Marionette	INFO	New connections will no longer be accepted
+1505270061002	geckodriver	INFO	Listening on 127.0.0.1:9059
+1505270063007	mozprofile::profile	INFO	Using profile path C:\Users\heygears\AppData\Local\Temp\rust_mozprofile.g2ses2QEhasC
+1505270063007	geckodriver::marionette	INFO	Starting browser D:\FireFox54\firefox.exe
+1505270063047	geckodriver::marionette	INFO	Connecting to Marionette on localhost:9065
+1505270063941	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1596"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1596 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1631 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3152 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2246 < callProvider()@resource://gre/modules/AddonManager.jsm:271 < _startProvider()@resource://gre/modules/AddonManager.jsm:741 < startup()@resource://gre/modules/AddonManager.jsm:908 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file:///D:/FireFox54/omni.ja!/components/addonManager.js:65
+Unable to read VR Path Registry from C:\Users\heygears\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 15000] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\heygears\AppData\Local\openvr\openvrpaths.vrpath
+[Child 13768] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 15000] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 15000] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\heygears\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 6100] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1505270076815	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+Unable to read VR Path Registry from C:\Users\heygears\AppData\Local\openvr\openvrpaths.vrpath
+[Child 14732] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14732] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1505271154751	geckodriver	INFO	Listening on 127.0.0.1:9268
+1505271156754	mozprofile::profile	INFO	Using profile path C:\Users\heygears\AppData\Local\Temp\rust_mozprofile.hgpJZSLYXWBa
+1505271156754	geckodriver::marionette	INFO	Starting browser D:\FireFox54\firefox.exe
+1505271156774	geckodriver::marionette	INFO	Connecting to Marionette on localhost:9275
+1505271157085	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1596"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1596 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1631 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3152 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2246 < callProvider()@resource://gre/modules/AddonManager.jsm:271 < _startProvider()@resource://gre/modules/AddonManager.jsm:741 < startup()@resource://gre/modules/AddonManager.jsm:908 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file:///D:/FireFox54/omni.ja!/components/addonManager.js:65
+Unable to read VR Path Registry from C:\Users\heygears\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 15028] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 15028] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 15028] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\heygears\AppData\Local\openvr\openvrpaths.vrpath
+[Child 10136] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10136] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1505271161022	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+Unable to read VR Path Registry from C:\Users\heygears\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  UnknownError
+[GPU 15028] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
